@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.header`
   height: 100vh;
-  width: 27.5rem;
+  max-width: 27.5rem;
 
   padding: 0.2rem 1rem;
 
@@ -13,8 +13,19 @@ export const Container = styled.header`
 
   border-right: 1px solid var(--color-border);
 
+  @media (max-width: 1265px) {
+    & {
+      min-width: 6.8rem;
+      width: 17.5rem;
+      align-items: flex-end;
+    }
+  }
+
   div {
     width: 100%;
+
+    display: flex;
+    flex-direction: column;
   }
 
   .twitter-logo {
@@ -32,6 +43,13 @@ export const Container = styled.header`
   nav {
     display: flex;
     flex-direction: column;
+  }
+
+  @media (max-width: 1265px) {
+    div,
+    nav {
+      align-items: flex-end;
+    }
   }
 
   button {
@@ -52,6 +70,15 @@ export const Container = styled.header`
       background-color: var(--color-blue-primary-hover);
     }
   }
+
+  @media (max-width: 1265px) {
+    button {
+      height: 47px;
+      width: 47px;
+
+      margin-right: 0.4rem;
+    }
+  }
 `;
 
 export const HeaderLink = styled.a`
@@ -65,6 +92,16 @@ export const HeaderLink = styled.a`
   align-items: center;
 
   transition: background-color 0.2s;
+
+  @media (max-width: 1265px) {
+    span {
+      display: none;
+    }
+
+    & {
+      padding: 1rem;
+    }
+  }
 
   &:hover {
     color: var(--color-blue-primary);
@@ -92,6 +129,18 @@ export const UserInfo = styled.a`
 
   cursor: pointer;
 
+  @media (max-width: 1265px) {
+    div,
+    svg {
+      display: none;
+    }
+
+    & {
+      justify-content: flex-end;
+      width: min-content;
+    }
+  }
+
   &:hover {
     background-color: var(--color-link-hover);
   }
@@ -101,6 +150,12 @@ export const UserInfo = styled.a`
 
     border-radius: 50%;
     margin-right: 1rem;
+  }
+
+  @media (max-width: 1265px) {
+    img {
+      margin-right: 0;
+    }
   }
 
   div {
