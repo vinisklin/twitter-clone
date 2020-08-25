@@ -12,7 +12,9 @@ import {
   FaChevronDown,
 } from 'react-icons/fa';
 
-import { Container, HeaderLink, UserInfo } from './styles';
+import HeaderButton from './HeaderButton';
+
+import { Container, UserInfo } from './styles';
 
 const MainHeader: React.FC = () => {
   return (
@@ -23,45 +25,37 @@ const MainHeader: React.FC = () => {
         </a>
 
         <nav>
-          <HeaderLink href="/#">
-            <FaHome color="white" size={26} />
-            <span>Home</span>
-          </HeaderLink>
+          <HeaderButton href="/#" icon={FaHome}>
+            Home
+          </HeaderButton>
 
-          <HeaderLink href="/#">
-            <FaHashtag color="white" size={26} />
-            <span>Explore</span>
-          </HeaderLink>
+          <HeaderButton href="/#" icon={FaHashtag}>
+            Explore
+          </HeaderButton>
 
-          <HeaderLink href="/#">
-            <FaRegBell color="white" size={26} />
-            <span>Notifications</span>
-          </HeaderLink>
+          <HeaderButton href="/#" icon={FaRegBell}>
+            Notifications
+          </HeaderButton>
 
-          <HeaderLink href="/#">
-            <FaRegEnvelope color="white" size={26} />
-            <span>Messages</span>
-          </HeaderLink>
+          <HeaderButton href="/#" icon={FaRegEnvelope}>
+            Messages
+          </HeaderButton>
 
-          <HeaderLink href="/#">
-            <FaRegBookmark color="white" size={26} />
-            <span>Bookmarks</span>
-          </HeaderLink>
+          <HeaderButton href="/#" icon={FaRegBookmark}>
+            Bookmarks
+          </HeaderButton>
 
-          <HeaderLink href="/#">
-            <FaRegListAlt color="white" size={26} />
-            <span>Lists</span>
-          </HeaderLink>
+          <HeaderButton href="/#" icon={FaRegListAlt}>
+            Lists
+          </HeaderButton>
 
-          <HeaderLink href="/#">
-            <FaRegUser color="white" size={26} />
-            <span>Profile</span>
-          </HeaderLink>
+          <HeaderButton href="/#" icon={FaRegUser}>
+            Profile
+          </HeaderButton>
 
-          <HeaderLink href="/#">
-            <FaEllipsisH color="white" size={26} />
-            <span>More</span>
-          </HeaderLink>
+          <HeaderButton href="/#" icon={FaEllipsisH}>
+            More
+          </HeaderButton>
         </nav>
 
         <button type="button">Tweet</button>
