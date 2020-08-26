@@ -9,6 +9,7 @@ export default createGlobalStyle`
     --color-blue-primary: rgb(29, 161, 242);
     --color-blue-primary-hover: rgb(26, 145, 218);
     --color-border: #464646;
+    --color-border-secondary: rgb(37, 51, 65);
     --primary: #000;
     --secondary: #15181C;
     --search: #202327;
@@ -58,14 +59,14 @@ export default createGlobalStyle`
   /* Tablet */
   @media (max-width: 1080px) {
     html {
-      font-size: 58%;
+      font-size: 60%;
     }
   }
 
   /* Mobile */
   @media (max-width: 720px) {
     html {
-      font-size: 54%;
+      font-size: 58%;
     }
   }
 `;

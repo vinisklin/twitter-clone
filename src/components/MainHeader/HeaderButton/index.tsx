@@ -14,7 +14,7 @@ const HeaderButton: React.FC<HeaderButtonProps> = ({
 }) => {
   return (
     <Container href={rest.href}>
-      <Icon color="white" size={26} />
+      <Icon size={26} />
       <span>{children}</span>
     </Container>
   );

@@ -7,6 +7,7 @@ export const Container = styled.header`
   padding: 0.2rem 1rem;
 
   display: flex;
+  flex-shrink: 1;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
@@ -16,14 +17,11 @@ export const Container = styled.header`
   @media (max-width: 1265px) {
     & {
       min-width: 6.8rem;
-      width: 17.5rem;
       align-items: flex-end;
     }
   }
 
   div {
-    width: 100%;
-
     display: flex;
     flex-direction: column;
   }
